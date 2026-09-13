@@ -1,0 +1,13 @@
+{
+  "ignorePatterns": [
+    "third-party/**",
+    "lib/**",
+    "out/**",
+    "cache/**",
+    "bun.lock",
+    "docs/research/**"
+  ],
+  "semi": true,
+  "singleQuote": false,
+  "printWidth": 100
+}

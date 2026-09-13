@@ -1,0 +1,4 @@
+{
+  "ignorePatterns": ["third-party/**", "lib/**", "node_modules/**"],
+  "categories": { "correctness": "error" }
+}

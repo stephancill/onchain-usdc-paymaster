@@ -1,0 +1,33 @@
+{
+  "name": "permissionless-usdc-paymaster",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint --deny-warnings packages",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test packages/client",
+    "check": "bun run format:check && bun run lint && bun run typecheck && bun run test",
+    "contracts:build": "forge build",
+    "contracts:check": "forge fmt --check && forge build",
+    "inspect:vibenet": "bun run packages/cli/src/inspect-vibenet.ts",
+    "probe:vibenet:8130": "bun run packages/cli/src/probe-vibenet-8130.ts"
+  },
+  "dependencies": {
+    "viem": "2.56.3",
+    "zod": "4.6.1"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.2",
+    "oxfmt": "0.67.0",
+    "oxlint": "1.82.0",
+    "typescript": "7.0.2"
+  },
+  "packageManager": "bun@1.3.14"
+}

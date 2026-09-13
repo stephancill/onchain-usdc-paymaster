@@ -1,0 +1,35 @@
+{
+  "_branch": "main",
+  "_commit": "b51ca726c",
+  "faucetAddress": "0xFEdBF7fB9716409586BCc74175B2704Bdf919EF0",
+  "activationRegistry": "0x8453000000000000000000000000000000000001",
+  "b20Factory": "0xB20F000000000000000000000000000000000000",
+  "policyRegistry": "0x8453000000000000000000000000000000000002",
+  "baseFeatures": {
+    "b20_asset": true,
+    "b20_stablecoin": true,
+    "policy_registry": true
+  },
+  "eip8130": {
+    "Keystore": "0x813012bd8d971928475235bbac6f0488c4a100ac",
+    "DefaultAccount": "0x81309c54d6bc190fbbc0fa9f296ea4c6a539adef",
+    "CanonicalHighRatePayerAccount": "0x813002ffdd25c81cef79781702176d453af0fa57",
+    "P256Authenticator": "0x8130c89f65750431b564a4730397552a11cea256",
+    "WebAuthnAuthenticator": "0x813007b6b1b48e75d91dec5927ab515d12a0f1d0",
+    "DelegateAuthenticator": "0x81301aa52202f8c6b79cde660440e3c6a7c5ade1",
+    "PolicyManager": "0x8130e47bc12cfdd6d2d2178b35def9a51cae0ac1",
+    "SessionPolicy": "0x8130a0d85473cef9e888b4228f729b48f0c45e55"
+  },
+  "entryPointV06": "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789",
+  "coinbaseSmartWalletV11": "0x00000110dCdEdC9581cb5eCB8467282f2926534d",
+  "coinbaseSmartWalletFactoryV11": "0xBA5ED110eFDBa3D005bfC882d75358ACBbB85842",
+  "validityFactory": "0xFC076BC5DD2EE015508a257d5318927b8E21eE13",
+  "validitySwapHelper": "0x6F5A2e185d58fec58a55D8BE1A9EA9A361899d55",
+  "validityMinter": "0x09789310F6Db41c2d9a045641c97aC91e4209335",
+  "usdv": "0x64BD2e932FA41c9Fb7451996fbA3bd270d647d6D",
+  "nfv": "0x76850FA743f90B4878e1618A955D54A44daBF2fe",
+  "vibecheck": "0x8f88C51CA3dF2E014B6ef9bDEf097Ad463Af62D7",
+  "vibeToken": "0xB200000000000000000000ef8aE5Df466876133d",
+  "validityPair": "0x050b84A1305F0687b4DCE4e89F4376c492B81833",
+  "conditionalWithdrawal": "0x0980d52DC9151137C7dE82d613eEb3EF34933a9B"
+}

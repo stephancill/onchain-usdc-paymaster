@@ -1,0 +1,60 @@
+{
+  "observedAt": "2026-09-13T16:36:38.037Z",
+  "rpcUrl": "https://rpc.vibes.base.org",
+  "chainId": 84538453,
+  "discoveredCommit": "b51ca726c",
+  "contractLinking": {
+    "Keystore": "match",
+    "DefaultAccount": "match",
+    "CanonicalHighRatePayerAccount": "match",
+    "P256Authenticator": "match",
+    "WebAuthnAuthenticator": "match",
+    "DelegateAuthenticator": "match"
+  },
+  "gates": {
+    "G02_custom_authenticator_accepted": false,
+    "G04_calls_getter_available": false,
+    "G04_gas_limit_getter_available": false
+  },
+  "contextGetters": {
+    "getTransactionSender()": {
+      "selector": "0xbead3f50",
+      "accepted": true
+    },
+    "getTransactionPayer()": {
+      "selector": "0x690b3a9d",
+      "accepted": true
+    },
+    "getTransactionSenderActorId()": {
+      "selector": "0xe14fe3f3",
+      "accepted": true
+    },
+    "getTransactionCalls()": {
+      "selector": "0xdf66b5cb",
+      "accepted": false,
+      "revertData": "0xdf66b5cb"
+    },
+    "getTransactionGasLimit()": {
+      "selector": "0xd13f350a",
+      "accepted": false,
+      "revertData": "0xd13f350a"
+    }
+  },
+  "payerAuthEstimates": {
+    "canonical": {
+      "ok": true,
+      "result": "0xe9bc"
+    },
+    "nonCanonical": {
+      "ok": false,
+      "code": -32602,
+      "error": "invalid EIP-8130 estimate request: missing EIP-8130 fields, no sender account (neither `sender` nor `from`), a `sender`/`from` mismatch, a `sender_auth`/`payer_auth` blob whose data exceeds the maximum size, or a `payer_auth` with an unrecognized authenticator selector"
+    }
+  },
+  "interpretation": {
+    "scopeBits": "Live client revision uses SCOPE_SPONSOR_PAYER = 0x04 (not the EIP draft's 0x10); see base/base crates/common/consensus/.../eip8130/constants.rs.",
+    "authentication": "Payer authentication is canonical-only. No permissive STATICCALL or MAX_AUTHENTICATION_GAS exists in the discovered client revision.",
+    "context": "Only sender, payer, and sender actor id are exposed; calls and gas limit are not."
+  },
+  "limitation": "Read-only simulation evidence. A funded native 0x79 broadcast is still required for final confirmation."
+}

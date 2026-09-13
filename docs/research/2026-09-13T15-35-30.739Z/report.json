@@ -1,0 +1,134 @@
+{
+  "observedAt": "2026-09-13T15:35:30.739Z",
+  "rpcUrl": "https://rpc.vibes.base.org",
+  "apiUrl": "https://api.vibes.base.org",
+  "chainId": 84538453,
+  "advertisedFaucetChainId": 84538453,
+  "clientVersion": "reth/v2.5.2-76a8261/x86_64-unknown-linux-gnu",
+  "genesisHash": "0x0266d1618641b4fd1793682ae93358d52b83e68af3970a8b6a5227b2d60d34bf",
+  "block": {
+    "number": "1308110",
+    "hash": "0x4351c60632b8c00cac5c6549b688c3a280868e750d181819674f0697ca9bf600",
+    "timestamp": "1789313731",
+    "gasLimit": "6000000",
+    "baseFeePerGas": "1000000000"
+  },
+  "discoveryCommit": "b51ca726c",
+  "sources": {
+    "eip": "6a6569c489383a546337e9da8289ecde84d0dd21",
+    "referenceContracts": "812317be00d6829e217e0cc92f75be362fde0711",
+    "spendPermissions": "e0004e63edc4e17de7aa978293800ac7a16892e5",
+    "baseUi": "e3d447df6e4884442ea1219d0b9084aebd4463d3"
+  },
+  "tokens": {
+    "stablecoin": {
+      "address": "0x64BD2e932FA41c9Fb7451996fbA3bd270d647d6D",
+      "symbol": "USDV",
+      "decimals": 6,
+      "totalSupply": "1836000000000"
+    },
+    "wrappedETH": {
+      "address": "0x4200000000000000000000000000000000000006",
+      "symbol": "WETH",
+      "decimals": 18,
+      "totalSupply": "0"
+    },
+    "vibe": {
+      "address": "0xB200000000000000000000ef8aE5Df466876133d",
+      "symbol": "VIBE",
+      "decimals": 18,
+      "totalSupply": "18400000000000000000000000"
+    }
+  },
+  "factory": "0xFC076BC5DD2EE015508a257d5318927b8E21eE13",
+  "helper": "0x6F5A2e185d58fec58a55D8BE1A9EA9A361899d55",
+  "pairCount": "1",
+  "pairs": [
+    {
+      "address": "0x050b84A1305F0687b4DCE4e89F4376c492B81833",
+      "token0": "0x64BD2e932FA41c9Fb7451996fbA3bd270d647d6D",
+      "token1": "0xB200000000000000000000ef8aE5Df466876133d",
+      "reserve0": "126380005707",
+      "reserve1": "2215544938545925662373053",
+      "timestampLast": 1789147784
+    }
+  ],
+  "settlementPair": null,
+  "code": [
+    {
+      "address": "0x64BD2e932FA41c9Fb7451996fbA3bd270d647d6D",
+      "byteLength": 1565,
+      "codeHash": "0xd7014399350c4b99f52954f95740b39b012276c97f95a2b90ebd62c09d31fe00"
+    },
+    {
+      "address": "0x4200000000000000000000000000000000000006",
+      "byteLength": 2846,
+      "codeHash": "0xe354d52f6267708b1b69faf84795aaf6abfa01e623ca8f912023399888e58fdb"
+    },
+    {
+      "address": "0xB200000000000000000000ef8aE5Df466876133d",
+      "byteLength": 1,
+      "codeHash": "0x309b8896ee4c1ff7ec1966155373dee42663b6b40c3fedc70ba501684848d2a3"
+    },
+    {
+      "address": "0xFC076BC5DD2EE015508a257d5318927b8E21eE13",
+      "byteLength": 13859,
+      "codeHash": "0xd549e6643a69da2ea60ddf3d7c0f271ae8bbcceee2bfe8d434e60ca663bc4770"
+    },
+    {
+      "address": "0x6F5A2e185d58fec58a55D8BE1A9EA9A361899d55",
+      "byteLength": 1862,
+      "codeHash": "0xf45ae6b9e52164e78f616863890049b8d1b043fe7019b997127896f3f6d6d1f9"
+    },
+    {
+      "address": "0x813012Bd8D971928475235BBac6F0488c4A100AC",
+      "byteLength": 10675,
+      "codeHash": "0x9437c029a953305cb75e1f0e3fbe9fb92a4115c4b6771406e8fc9bd309113b67"
+    },
+    {
+      "address": "0x81309c54D6Bc190FbBc0FA9f296ea4C6A539ADEf",
+      "byteLength": 1744,
+      "codeHash": "0x33529464de45d68106645749157f76a83ee87844fe34ad271d587c9ed457c6ca"
+    },
+    {
+      "address": "0x813002fFdd25C81CeF79781702176D453AF0Fa57",
+      "byteLength": 2155,
+      "codeHash": "0xeb1db4398732ce133a64a4d0a82a91ea0825c4cb31d3e29749e3e0e4b2024c66"
+    },
+    {
+      "address": "0x8130C89F65750431b564A4730397552a11CeA256",
+      "byteLength": 3123,
+      "codeHash": "0x11076a65c0825d034a54522f0bcdce61da1db951dfa29e88917ae712b8391bad"
+    },
+    {
+      "address": "0x813007b6b1b48E75D91dEc5927ab515d12a0F1d0",
+      "byteLength": 4274,
+      "codeHash": "0xd9346aa7e3bc8d2d431f5168ce6cd97fc2f9e38838361ad0e2d5e750412b1e87"
+    },
+    {
+      "address": "0x81301AA52202f8C6b79Cde660440E3c6A7c5ade1",
+      "byteLength": 621,
+      "codeHash": "0x343a56afcfc15968fb783118f315e771e7dcbf51e836516b491ef1f25ab63f37"
+    },
+    {
+      "address": "0x8130E47Bc12CfDD6d2d2178B35Def9A51cae0aC1",
+      "byteLength": 3853,
+      "codeHash": "0xd41a7fea7463efff7325a259f232253b01ef0df1719da412e21c3f5ffcbd05c3"
+    },
+    {
+      "address": "0x8130A0D85473CeF9e888B4228F729b48F0c45E55",
+      "byteLength": 7305,
+      "codeHash": "0x83165f611cd09e379df3ec7ea4a1f719f530f20c4c3a3a25fe24f50aeca8dc25"
+    },
+    {
+      "address": "0x050b84A1305F0687b4DCE4e89F4376c492B81833",
+      "byteLength": 11293,
+      "codeHash": "0x94a8db565fae1daf491aac195f8574677dae61928c4781e155bb56a8fc8d3d37"
+    }
+  ],
+  "conflicts": [
+    "RPC chain 84538453 differs from candidate 84511701"
+  ],
+  "nativeCompatibility": "unproven",
+  "nextStep": "Create and seed a USDV/wrapped-ETH pair after native compatibility checks"
+}

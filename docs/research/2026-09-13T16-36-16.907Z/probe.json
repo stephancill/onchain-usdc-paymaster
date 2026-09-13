@@ -1,0 +1,59 @@
+{
+  "observedAt": "2026-09-13T16:36:16.907Z",
+  "rpcUrl": "https://rpc.vibes.base.org",
+  "chainId": 84538453,
+  "discoveredCommit": "b51ca726c",
+  "contractLinking": {
+    "Keystore": "match",
+    "DefaultAccount": "match",
+    "CanonicalHighRatePayerAccount": "match",
+    "P256Authenticator": "match",
+    "WebAuthnAuthenticator": "match",
+    "DelegateAuthenticator": "match"
+  },
+  "gates": {
+    "G02_custom_authenticator_accepted": false,
+    "G04_calls_getter_available": false,
+    "G04_gas_limit_getter_available": false
+  },
+  "contextGetters": {
+    "getTransactionSender()": {
+      "selector": "0xbead3f50",
+      "accepted": true
+    },
+    "getTransactionPayer()": {
+      "selector": "0x690b3a9d",
+      "accepted": true
+    },
+    "getTransactionSenderActorId()": {
+      "selector": "0xe14fe3f3",
+      "accepted": true
+    },
+    "getTransactionCalls()": {
+      "selector": "0xdf66b5cb",
+      "accepted": false,
+      "revertData": "0x813000000000000000000000000000000000aa02"
+    },
+    "getTransactionGasLimit()": {
+      "selector": "0xd13f350a",
+      "accepted": false,
+      "revertData": "0x813000000000000000000000000000000000aa02"
+    }
+  },
+  "payerAuthEstimates": {
+    "canonical": {
+      "ok": true,
+      "result": "0xe9bc"
+    },
+    "nonCanonical": {
+      "ok": false,
+      "error": "Invalid parameters were provided to the RPC method.\nDouble check you have provided the correct parameters.\n\nURL: https://rpc.vibes.base.org\nRequest body: {\"method\":\"eth_estimateGas\",\"params\":[{\"sender\":\"0x1111111111111111111111111111111111111111\",\"calls\":[[{\"to\":\"0x3333333333333333333333333333333333333333\",\"data\":\"0x\"}]],\"payer\":\"0x2222222222222222222222222222222222222222\",\"payerAuth\":\"0x00000000000000000000000000000000deadbeef1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\"}]}\n\nDetails: invalid EIP-8130 estimate request: missing EIP-8130 fields, no sender account (neither `sender` nor `from`), a `sender`/`from` mismatch, a `sender_auth`/`payer_auth` blob whose data exceeds the maximum size, or a `payer_auth` with an unrecognized authenticator selector\nVersion: viem@2.56.3"
+    }
+  },
+  "interpretation": {
+    "scopeBits": "Live client revision uses SCOPE_SPONSOR_PAYER = 0x04 (not the EIP draft's 0x10); see base/base crates/common/consensus/.../eip8130/constants.rs.",
+    "authentication": "Payer authentication is canonical-only. No permissive STATICCALL or MAX_AUTHENTICATION_GAS exists in the discovered client revision.",
+    "context": "Only sender, payer, and sender actor id are exposed; calls and gas limit are not."
+  },
+  "limitation": "Read-only simulation evidence. A funded native 0x79 broadcast is still required for final confirmation."
+}

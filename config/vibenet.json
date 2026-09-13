@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "name": "vibenet-metered-usdv-v0",
+  "chain": {
+    "id": 84538453,
+    "rpcUrl": "https://rpc.vibes.base.org",
+    "apiUrl": "https://api.vibes.base.org"
+  },
+  "sources": {
+    "eip": "6a6569c489383a546337e9da8289ecde84d0dd21",
+    "referenceContracts": "812317be00d6829e217e0cc92f75be362fde0711",
+    "spendPermissions": "e0004e63edc4e17de7aa978293800ac7a16892e5",
+    "baseUi": "e3d447df6e4884442ea1219d0b9084aebd4463d3"
+  },
+  "policy": {
+    "maxWitnessBytes": 2048,
+    "maxUserCalls": 8,
+    "maxFailurePrefixBytes": 256,
+    "maxGasLimit": "1500000",
+    "hardMaxFeePerGas": "5000000000",
+    "maxPriorityFeePerGas": "100000000",
+    "maxValiditySeconds": 120,
+    "validationMarginBps": 1000,
+    "serviceFeeBps": 0,
+    "oracleMaxAgeSeconds": 604800,
+    "treasuryUnlockDelaySeconds": 600
+  },
+  "candidates": {
+    "stablecoin": "0x64BD2e932FA41c9Fb7451996fbA3bd270d647d6D",
+    "wrappedETH": "0x4200000000000000000000000000000000000006",
+    "factory": "0xFC076BC5DD2EE015508a257d5318927b8E21eE13",
+    "swapHelper": "0x6F5A2e185d58fec58a55D8BE1A9EA9A361899d55",
+    "context": "0x813000000000000000000000000000000000aa02"
+  },
+  "deployment": {
+    "pair": null,
+    "payer": null,
+    "permissionManager": null,
+    "meteredAccountImplementation": null,
+    "authenticator": null,
+    "settlement": null,
+    "oracle": null
+  },
+  "protocol": {
+    "clientCommit": null,
+    "genesisHash": "0x0266d1618641b4fd1793682ae93358d52b83e68af3970a8b6a5227b2d60d34bf",
+    "maxAuthenticationGas": null,
+    "evidence": {
+      "chainIdentityResolved": false,
+      "customAuthenticatorAccepted": false,
+      "payerHashVerified": false,
+      "transactionContextVerified": false,
+      "gasAccountingVerified": false,
+      "stateRevalidationVerified": false,
+      "meteredAccountVerified": false,
+      "lockedTreasuryVerified": false,
+      "routeVerified": false,
+      "sourceVerificationAvailable": false
+    }
+  },
+  "calibration": {
+    "billingOverheadGas": null,
+    "cleanupGasReserve": null,
+    "minimumTransactionGas": null,
+    "maximumUserCallGas": null,
+    "stablePerEthE6": null,
+    "reportHash": null
+  },
+  "verifiedDeploymentManifestHash": null
+}
